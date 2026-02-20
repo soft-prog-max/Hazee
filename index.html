@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Persons Information</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<header class="header">
+  <h2>Persons Information</h2>
+</header>
+
+<div class="container">
+
+  <nav class="sidebar">
+<ul>
+  <li onclick="location.href='index.html'">🏠 Home</li>
+  <li>👥 Persons</li>
+  <li onclick="location.href='about me.html'">ℹ️ About Me</li>
+  <li onclick="Contact()">📞 Contact</li>
+  <li onclick="logout()">🚪 Logout</li>
+</ul>
+
+  </nav>
+
+  <main class="content">
+
+    <div class="form-section">
+      <h3>Please Enter Information</h3>
+
+      <input type="text" id="fname" placeholder="First Name">
+      <input type="text" id="mname" placeholder="Middle Name">
+      <input type="text" id="lname" placeholder="Last Name">
+      <input type="number" id="age" placeholder="Age">
+      <input type="email" id="email" placeholder="Email">
+
+      <button id="saveBtn">Save 💾</button>
+      <button id="undoBtn">clear ↩️</button>
+      <button id="peekBtn">Peek 👀</button>
+      <button id="sizeBtn">Stack Size 📦</button>
+    </div>
+
+    <div class="data-section">
+      <h3>Saved Persons Data</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>First</th>
+            <th>Middle</th>
+            <th>Last</th>
+            <th>Age</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
